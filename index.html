@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="styles.css" rel="stylesheet" />
+    <link href="styles.css" rel="stylesheet">
     <title>Wonderlust Travel- Destination Majorca</title>
 </head>
 
@@ -261,41 +261,41 @@
     <footer>
         <section id="contact-us">
             <h3>Contact Us</h3> <span id="required">(*required)</span>
-
-            <div>
-                <label>First Name<span>*</span></label>
-                <input>
-            </div>
-            <div>
-                <label>Last Name<span>*</span></label>
-                <input>
-            </div>
-            <div>
-                <label>Email<span>*</span></label>
-                <input>
-            </div>
-            <div>
-                <label>Phone<span>*</span></label>
-                <input>
-            </div>
-            <fieldset id="preferred-contact">
-                <legend>Preferred Contact Method<span>*</span></legend>
-                <div>
-                    <input>
-                    <label>Email</label>
+            <form>
+                <div class="form-control">
+                    <label for="first">First Name<span>*</span></label>
+                    <input type="text" name="first" id="first" required />
                 </div>
-                <div>
-                    <input>
-                    <label>Text</label>
+                <div class="form-control">
+                    <label for="last">Last Name<span>*</span></label>
+                    <input type="text" name="last" id="last" required />
                 </div>
-                <div>
-                    <input>
-                    <label>Phone</label>
+                <div class="form-control">
+                    <label for="email">Email<span>*</span></label>
+                    <input type="email" name="email" id="email" required />
                 </div>
-            </fieldset>
-            <fieldset id="destination">
-                <legend>Destination<span>*</span></legend>
-                <select id="select-destination">
+                <div class="form-control">
+                    <label for="phone">Phone<span>*</span></label>
+                    <input type="tel" name="phone" id="phone" required />
+                </div>
+                <fieldset id="preferred-contact">
+                    <legend>Preferred Contact Method<span>*</span></legend>
+                    <div class="form-control">
+                        <input>
+                        <label>Email</label>
+                    </div>
+                    <div class="form-control">
+                        <input>
+                        <label>Text</label>
+                    </div>
+                    <div class="form-control">
+                        <input>
+                        <label>Phone</label>
+                    </div>
+                </fieldset>
+                <fieldset id="destination">
+                    <legend>Destination<span>*</span></legend>
+                    <select id="select-destination">
                         <option>Choose</option>
                         <option>Barcelona</option>
                         <option>Granada</option>
@@ -307,10 +307,10 @@
                         <option>Valencia</option>
                         <option>Other</option>
                     </select>
-            </fieldset>
-            <fieldset id="travelTime">
-                <legend>Travel Time<span>*</span></legend>
-                <select id="select-travel-time">
+                </fieldset>
+                <fieldset id="travelTime">
+                    <legend>Travel Time<span>*</span></legend>
+                    <select id="select-travel-time">
                         <option>Choose</option>
                         <option>Fall</option>
                         <option>Winter</option>
@@ -318,14 +318,14 @@
                         <option>Summer</option>
                         <option>Flexible</option>
                     </select>
-            </fieldset>
-            <input>
-
+                </fieldset>
+                <input id="submit" type=" submit " value="Submit " />
+            </form>
         </section>
-        <section id="legal">
+        <section id="legal ">
             <h2>Legal</h2> <small>Copyright 2021 Wonderlust</small>
-            <a href="#">Privacy Statement</a>
-            <a href="#">Terms of Service</a>
+            <a href="# ">Privacy Statement</a>
+            <a href="# ">Terms of Service</a>
         </section>
     </footer>
 </body>
